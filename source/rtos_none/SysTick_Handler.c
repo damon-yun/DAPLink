@@ -22,6 +22,9 @@
 #include "SysTick_Handler.h"
 #include "device.h"
 
+#define  OS_CLOCK  (600000000)
+#define  OS_TICK   (1000)
+
 //SysTick Timer Configuration
 #ifndef OS_CLOCK
 #error "OS_CLOCK should be defined by HIC configuration"
