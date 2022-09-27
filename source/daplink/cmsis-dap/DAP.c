@@ -1833,6 +1833,10 @@ void DAP_Setup(void) {
 #endif
 #if (DAP_JTAG != 0)
   DAP_Data.jtag_dev.count = 0U;
+  //Add By Damon
+  DAP_Data.jtag_dev.ir_length[0] = 4;
+  DAP_Data.jtag_dev.count = 1;
+  DAP_Data.jtag_dev.index = 0;
 #endif
 
   // Sets DAP_Data.fast_clock and DAP_Data.clock_delay.
